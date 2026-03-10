@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "One Touch",
+  "version": "1.0.0",
+  "description": "Click all Follow buttons on the page to follow everyone at once.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "One touch"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

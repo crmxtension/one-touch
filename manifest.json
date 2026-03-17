@@ -3,7 +3,7 @@
   "name": "One Touch",
   "version": "1.0.0",
   "description": "Click all Follow buttons on the page to follow everyone at once.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "contextMenus"],
   "action": {
     "default_title": "One touch"
   },
